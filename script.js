@@ -48,13 +48,26 @@ document.addEventListener('DOMContentLoaded', function () {
         if (currentVerseIndex >= 0) {
             displayCurrentVerse();
         } else {
-            currentVerseIndex = 0;  // Stay at the first verse if we are already at the beginning
+            currentVerseIndex = 0;
         }
     }
 
     function resetInterval() {
         clearInterval(intervalId);
         intervalId = setInterval(showNextVerse, 10000);
+    }
+
+    function handleTap(event) {
+        const rect = verseContainer.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+
+        if (x < rect.width / 2) {
+            showPreviousVerse();
+        } else {
+            showNextVerse();
+        }
+
+        resetInterval();
     }
 
     let lastTapTime = 0;
@@ -69,6 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
         lastTapTime = currentTime;
     });
 
-    intervalId = setInterval(showNextVerse, 10000); // Change verse every 10 seconds adjust accordingly to your need 👋🏻
-    fetchRandomSurah(); 
+    intervalId = setInterval(showNextVerse, 9000);
+    fetchRandomSurah();
 });
