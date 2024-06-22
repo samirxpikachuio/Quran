@@ -69,6 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
         lastTapTime = currentTime;
     });
 
-    intervalId = setInterval(showNextVerse, 10000); // Change verse every 10 seconds
-    fetchRandomSurah(); // Initial fetch
+    intervalId = setInterval(showNextVerse, 10000); // Change verse every 10 seconds adjust accordingly to your need 👋🏻
+    fetchRandomSurah(); 
 });
