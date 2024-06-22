@@ -18,7 +18,7 @@ To use this project locally:
 
 1. Clone this repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/samirxpikachuio/Quran.git
    ```
 
 2. Navigate to the project directory:
