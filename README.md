@@ -1,27 +1,37 @@
-# HTML, CSS, JS (Auto Refresh)
 
-This template is a starter for building a website with HTML, CSS and JS, powered by [Vite](https://vitejs.dev/). HTML provides the basic structure, CSS controls formatting, and JavaScript controls the behavior of different elements.
 
-Hit run to see this project in action. It will auto-refresh as you edit the HTML, CSS and JS files.
+# Quranic Verse 
 
-## Disable Auto Refresh
+![Web Preview](https://telegra.ph/file/11f48291bc6e03d817fa3.jpg)
 
-If you find the auto refresh getting in your way, go to [vite.config.js](./vite.config.js) and update it set `hmr` to false to disable hot module reloading (HMR). The full config will look like this:
+This project is a simple web application that displays random Quranic verses in English translation 
 
-```js
-export default defineConfig({
-  plugins: [],
-  server: {
-    host: '0.0.0.0',
-    hmr: false, // Change this line to `false` disable auto-refreshing.
-  }
-})
-```
+## Technologies Used
 
-## Packages
+- **HTML5**: Structure of the webpage.
+- **CSS3**: Styling and animations.
+- **JavaScript**: Logic for fetching Quranic verses, controlling audio playback, and handling user interactions.
 
-Because this template uses Vite to build your code, you can add install and use npm packages. Simple open the Packager tool to search and manage your packages.
+## Usage
 
-## Learn More
+To use this project locally:
 
-Check out [the vite docs](https://vitejs.dev) to learn more about configuring a frontend application.# Quran
+1. Clone this repository:
+   ```bash
+   git clone <repository_url>
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd Quran
+   ```
+
+3. Open `index.html` in a web browser.
+
+## Credits
+
+- Quranic verses data provided by [quran-json](https://github.com/risan/quran-json?tab=readme-ov-file).
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
